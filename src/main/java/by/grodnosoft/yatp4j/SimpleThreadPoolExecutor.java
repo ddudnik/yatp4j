@@ -265,7 +265,6 @@ public class SimpleThreadPoolExecutor implements Executor {
 			}
 		}
 
-		// should be called inside synchronized(lockObject) block!
 		private void updateCompletedTaskCounter(Priority taskPriority) {
 			switch (taskPriority) {
 			case URGENT:
